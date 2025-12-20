@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    My first line in HTML.  <!-- THIS IS WHAT WILL BE VISIBLE ON THE WEBPAGE -->
+
+    <h1>Big Heading</h1>
+    <h2>Smaller Heading</h2> 
+    <!-- HEADING TAGS AUTOMATICALLY START FROM A DIFFERENT LINE. 
+     i.e. A NEW PARAGRAPH -->
+
+    <p>The distant mountains shimmered under a coat of fresh porcelain snow, reflecting the brilliant violet hues of a setting sun. Below, the bustling village began to glow with warm amber lights as lanterns were lit along the cobblestone paths. Smoke curled lazily from stone chimneys, carrying the faint scent of cedarwood and spiced cider through the crisp evening air. Somewhere in the dense pine forest, a lone owl called out to the rising moon, marking the transition from day to night. It was a moment of perfect stillness, where time seemed to pause before the winter chill arrived.</p>
+    <!-- ABOVE IS A 100 WORD PARAGRAPH WRITTEN INSIDE 'P' TAG. -->
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium suscipit aspernatur iusto excepturi doloremque eum nemo tempore minus fugiat dolorum eveniet expedita dignissimos adipisci, molestias totam vitae maiores aliquam velit animi voluptatem a placeat? Velit quidem natus, eveniet, excepturi ea reiciendis earum aperiam voluptatibus quod voluptatem perspiciatis provident ex explicabo odit assumenda distinctio vel repudiandae. Dolore quibusdam, ipsum sapiente rem temporibus quas, magni deleniti accusamus, officiis minima amet corporis dignissimos! Magni rem aliquam molestiae sapiente, enim hic id iusto facere sit unde, ullam dolorum debitis fuga. Fuga debitis blanditiis, voluptatibus sint cum illum recusandae commodi aperiam distinctio rerum corrupti minus.</p>
+    <!-- 1. 'LOREM' GENERATES RANDOM 100 WORDS HERE. AND SINCE WE HAVE WRITTEN
+    THIS IN A DIFFERENT 'P' TAG, IT STARTS FROM A NEW PARAGRAPH. -->
+    
+    <p>A cow has 4 legs. A cow gives milk. A cow eats grass. A cow is an animal.</p>
+
+    <p>A cow has 4 legs. <br> A cow gives milk. <br> A cow eats grass. <br> A cow is an animal.</p>
+    <!-- WITHOUT LINE BREAK 'BR', THE 4 SENTENCES APPEAR IN THE SAME LINE. AFTER ADDING 'BR', EACH SENTENCE STARTS FROM
+    A NEW LINE.  -->
+
+    <img width="400px" src="https://images.pexels.com/photos/18038881/pexels-photo-18038881.jpeg" alt="">
+    <!-- THIS IS HOW WE CAN ADD AN IMAGE TO OUR WEBPAGE. USING 'IMG' TAG AND IMAGE ADDRESS. -->
+
+    <img width="400px" src="https://images.pexels.com/photos/34283331/pexels-photo-34283331.jpeg" alt="">
+    <!-- CLEARLY WE CAN SEE, 'IMG' TAG DOES NOT ADD A NEW LINE. SO TO ADD AN IMAGE
+    IN A NEW LINE, USE 'BR' TAG. AS SHOWN BELOW:  -->
+
+    <br>
+    <img width="300px" src="https://images.pexels.com/photos/33787704/pexels-photo-33787704.jpeg" alt="">
+
+    <!--  ABOVE WE USED IMAGES FROM INTERNET. BELOW WE'LL SEE HOW TO ADD IMAGES FROM 
+    COMPUTER STORAGE.(REQUIREMENT: THE IMAGE SHOULD BE IN THE SAME FOLDER AS THE HTML FILE) -->
+
+    <p>BELOW IS THE IMAGE WE ADDED HERE FROM COMPUTER MEMORY : </p>
+    <img width = "250px" src="mustang_pic.png" alt=""> 
+
+    <br>
+    <!-- NOW WE WILL ADD A LINK IN OUR WEBPAGE -->
+
+    <a href="">Click Me</a>
+    <!-- SINCE NO LINK IS PROVIDED, ON CLICKING THIS, THE WEBPAGE REFRESHES!! BELOW WE'LL 
+    PROVIDE A DIFFERENT WEBPAGE LINK.  -->
+
+    <br>
+    <!-- THIS WILL TAKE YOU TO MY LINKEDIN PROFILE -->
+    <a href="https://www.linkedin.com/in/noman-khan-476b36350/">Click Me Also</a>
+    
+    <br>
+    <!-- OPENING THE PROVIDED LINK IN A NEW TAB :  -->
+     <a rel = "noopener" target="_blank" href="https://www.linkedin.com/in/noman-khan-476b36350/">Click Me Please</a>
+
+     <!-- SECURITY RISK : WHEN A NEW TAB OPENS WITHOUT "noopener" THE NEW WEBSITE GETS A "key"
+     (CALLED window.opener) THAT LETS  IT REACH BACK AND TALK TO OUR ORIGINAL WEBSITE.
+     A MALICIOUS SITE COULD USE THAT KEY TO CHANGE OUR ORIGINAL PAGE. FOR EXAMPLE: WHILE 
+     THE USER IS LOOKING AT THE NEW TAB, THE ORIGINAL PAGE CAN BE CHANGE TO A FAKE LOGIN 
+     SCREEN TO TRICK THE USER INTO ENTERING THE PASSWORD.
+     HENCE, "noopener" LOCKS THIS DOOR. THE NEW SITE HAS NO WAY TO REACH BACK. -->
+
+     <!-- PERFORMANCE BOOST : THE BROWSER USUALLY TRIES TO DO EVERYTHING IN ONE "lane" OF 
+     TRAFFIC. i.e. IN A SINGLE PROCESS. THIS MEANS, THE ORIGNAL PAGE AND THE NEW TAB 
+     WILL HAVE TO SHARE THE SAME PROCESS. IF THE NEW PAGE IS VERY HEAVY OR SLOW, IT CAN
+     MAKE THE ORIGINAL TAB LAG OR FREEZE. 
+     "noopener" HERE TELLS THE BROWSER TO RUN THE NEW TAB IN A SEPARATE PROCESS WHICH 
+     KEEPS THE ORIGINAL WEBSITE PAGE RUNNING SMOOTHLY.  -->
+
+     <!-- GENERALLY THE NEW WEBSITE CAN SEE A "referrer" TAG WHICH TELLS THEM EXACTLY WHICH
+     WEBSITE YOU JUST CAME FROM. USING "noreferrer" WILL STOP THE NEW TAB FROM KNOWING 
+     THIS INFORMATION.  -->
+
+
+</body>
+</html>
