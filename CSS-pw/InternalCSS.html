@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal-CSS</title>
+
+    <!-- BELOW IS THE CLEARER WAY USING WHICH WE CAN MAKE OUR WEBPAGE LOOK GOOD.  -->
+
+    <style>
+        h1 {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            font-weight: 1000;
+            color:brown;
+            background-color: rgb(247, 182, 104);
+        }
+
+        p {
+            font-family: sans-serif;
+            font-size: x-large;
+            background-color: rgb(151, 248, 238);
+        }
+
+        body {
+            background-color: rgb(114, 114, 222);
+        }
+
+        /* NOW WE'LL USE THE CLASS NAMES IN ORDER TO UPDATE THE PROPERTIES OF EACH PARA 
+        SEPARATELY... */
+
+        .intro {
+            color: rgb(0, 102, 255);
+            font-weight: 1000;
+        }
+
+        .main {
+            background-color: rgb(255, 239, 20);
+        }   
+
+        /* EACH PARAGRAPH WILL HOLD THE PROPERTIES OF THE '<P>' PARA UNTIL THEY ARE CHANGED
+        MANUALLY. */
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>This Is The Heading!</h1>
+
+    <p>A cow has 4 legs. <br> A cow gives milk. <br> A cow eats grass. <br> A cow is an animal.</p>
+    
+    <!-- SINCE EACH PARAGRAPH TAG SHARE THE SAME NAME "<p>" WE NEED A WAY TO TELL THE BROWSER 
+    WHICH PARAGRAPH WE ARE TALKING ABOUT. 
+    HENCE WE USE 'classes'. CLASSES ARE LABELS/NAMES WHICH WE CAN GIVE TO EACH PARA.  -->
+
+    <p class  = "intro">This paragraph is blue and bold.</p>
+    <p class = "main">This paragrapph has a yellow background.</p>
+
+    <!-- INTERNAL CSS IS ALSO NOT THE OPTIMAL APPROACH. SINCE IT MAKES THE CODE LONG. 
+    HENCE WE USE EXTERNAL CSS, WHERE WE WILL MAKE A SEPARATE FILE FOR ALL THE UPDATES
+    AND LINK THAT FILE TO OUR ORIGINAL HTML PAGE. -->
+</body>
+</html>
