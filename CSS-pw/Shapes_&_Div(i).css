@@ -1,0 +1,73 @@
+* {
+    margin : 0%;
+    padding : 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height : 100%;
+    width : 100%;
+}
+
+body {
+    background-color: antiquewhite;
+
+    display: flex; /* EXPLANATION FOR THIS ATTRIBUTE IS WRITTEN AT THE END. */
+
+    align-items: center; /* THIS WILL CENTRE ELEMENTS VERTICALLY.  */
+
+    justify-content: center; /* THIS WILL CENTRE ELEMENTS HORIZONTALLY. */
+
+    /* IF WE USE BOTH, THE ELEMENT COMES AT THE CENTRE OF THE SCREEN. */
+
+    /* IF WE DON'T USE "display = flex" HERE, THE CENTERINGS WILL NOT WORK. */
+
+}
+
+div {
+
+    background-color:aquamarine;
+    height: 30%;
+    width: 30%;
+    font-size: x-large;
+    /* THIS IS HOW WE CREATE A BASIC <DIV> (sHORTFORM OF DIVISION) */
+
+    /* GO TO END. READ WHAT IS WRITTEN ABOUT CENTERING. THEN COME BACK. */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* USE A '#' WHEN MENTIONING A ID OF A DIV. 
+
+BELOW IS HOW YOU GIVE PROPERTIES TO A DIFFERENT DIV. ELSE IT WOULD TAKE THE PROPERTIES 
+OF THE ORIGINAL <DIV>  */
+
+#Box1 {
+    height: 30%;
+    width: 30%;
+    background-color: azure;
+    font-size:x-large;
+    /* text-align: center; */
+}
+
+/* ABOVE WE SEE THAT THE BOXES ARE ONE BELOW THE OTHER AND NOT SIDE BY SIDE.
+TO MAKE THE BOXES SIDE BY SIDE, WE NEED TO USE AN ATTRIBUTE IN OUR <BODY>
+
+AND THAT ATTRIBUTE IS 'DISPLAY' */
+
+
+/* NOW WE'LL SEE HOW TO ALIGN THE DIVs AT DIFFERENT POSITIONS IN OUR WEBPAGE.
+    IN ORDER TO APPLY ALIGN CENTRE TO ALL DIVs, WE'LL USE THE ATTRIBUTE IN PARENT 
+    TAG. i.e. <BODY> */
+
+
+/* SINCE BOTH THE DIVs ARE AT THE CENTRE OF THE WEBPAGE. LET'S TRY TO CENTRE THE CONTENT 
+OF THE DIVs ALSO. 
+
+AND THE CENTERING ATTRIBUTES ARE APPLIED TO CHILDREN. AND FOR CHILDREN WE'LL ADD 
+HEADING TAGS IN BOTH OUR DIVs. THEN, DO THE SAME WHAT WE DID IN <BODY> TO ALIGN THE 
+DIVs. */
+
+

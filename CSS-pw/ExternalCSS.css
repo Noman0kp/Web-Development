@@ -1,0 +1,29 @@
+ h1 {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            font-weight: 1000;
+            color:rgb(255, 126, 126);
+            background-color: rgb(255, 255, 255);
+        }
+
+        p {
+            font-family: sans-serif;
+            font-size: x-large;
+            background-color: rgb(88, 216, 255);
+        }
+
+        body {
+            background-color: rgb(175, 220, 240);
+        }
+
+        .intro {
+            color: rgb(254, 255, 165);
+            font-weight: 1000;
+        }
+
+        .main { 
+            background-color: rgb(255, 247, 139);
+        }   
+
+        /* THIS IS THE MOST OPTIMAL WAY OF ADDING BEAUTY TO OUR WEBPAGE. IT KEEPS THE CODE
+        CLEAN AND EASY TO UNDERSTAND. */

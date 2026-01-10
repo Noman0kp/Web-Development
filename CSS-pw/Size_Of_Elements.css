@@ -1,0 +1,29 @@
+
+h1 {
+
+    /* THE HEADING IS SMALL BUT IT COVERS A LARGE AREA IN THE WEBPAGE. */
+
+    text-align: center;
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.small{
+        /* USING THE "width" ATTRIBUTE, WE CAN REDUCE THE ELEMENT'S COVERED AREA. */
+
+      width: 50%; /* HENCE THE RECTANGLE REDUCES TO HALF OF IT'S LENGTH */
+
+    /* SINCE THE WIDTH IS LIMITED TO 50%, IF THE HEADING IS BIG, IT'LL EXPAND VERTICALLY 
+    DOWNWARD. */
+
+    /* ALSO SINCE THE TEXT-ALIGN IS SET TO CENTRE, THE HEADING WILL BE IN THE CENTRE OF
+    THE AREA LIMITED FOR IT . */
+}
+
+p {
+    color:brown;
+    font-size: x-large;
+    background-color: bisque;
+
+}
+    
