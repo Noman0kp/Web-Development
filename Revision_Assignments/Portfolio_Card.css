@@ -10,18 +10,17 @@ html,body {
 }
 
 body {
-    background-color:rgb(73, 72, 72);
+    background-color:rgb(83, 81, 81);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 div {
-    background-color: #cdcdcd;
+   
     width: 30%;
     height: 80%;
-    border-radius: 10%;
-
+  
     /* TO ADD SHADOW EFFECT TO AN ELEMENT (LIKE A BOX, CARD, OR A BUTTON), WE USE THE
     FOLLOWING TAG :
     
@@ -31,17 +30,38 @@ div {
     /* BELOW WHAT WE DID IS : 5PX(HORIZONTAL) 5PX(VERTICAL) 10PX(BLUR. TO MAKE SHADOW 
     LOOK SOFT) AMD RGBA(0, 0, 0, 0.5) IS THE COLOUR BLACK WITH 50% TRANSPARENT */
 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     
-    display: flex;
-    justify-content: center;  
+    /* display: flex;
+    justify-content: center;   */
+
 }
+
+/* CURRENTLY, OUR main COVERS 100% OF DIV. SO THE FLEXBOX AND CENTERING IN DIV DOES NOT
+REALLY AFFECT OUT MAIN SINCE IT'S THE SAME SIZE AS DIV. SO WE'LL COMMENT IT OUT
+
+NOW OUR DIV ACTS AS A CONTAINER CENTERED BY FLEXBOX IN <body> AND IT CONTAINS main
+WHICH IS OUR ACTUAL VISUAL CARD. */
+
+
+
+
 
 main { 
     
     height: 100%;
     width: 100%;
-   
+    background-color: #c9c9c9;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;  /* THIS STACKS THE ITEMS HORIZONTALLY SIDE-BY-SIDE */
+
+    flex-direction: column;  /* THIS CHANGES THE GRAVITY DIRECTION HENCE NOW THE ITEMS ARE 
+    STACKED VERTICALLY ONE BELOW THE OTHER */
+
+    align-items: center;  /* SICNE THE GRAVITY DIRECTION IS CHANGED, THIS WILL ALIGN ITEMS 
+    IN HORIZONTAL CENTRE NOW AND NOT VERTICAL CENTRE. */
+
 }
 
 p {
@@ -52,16 +72,27 @@ p {
     word-spacing: 0cap;
     font-weight:500;
     line-height: 1.5;
+    border-style: groove;
 
 }
 
-.spaced-link {
-    margin-right: 10px;
-}
+/* FOR THESE LINKS TO BE IN PROPER CENTRE, WE NEED TO USE FLEXBOX IN IT'S PARENT. i.e.
+MAIN. */
 
-.spaced-link-02 {
-    margin-right: 10px;
-}
+#LINKS {
+    display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding-bottom: 20px;
+   background-color:#ececec;
+   width: 100%;
+   
+   font-size: x-large;
+   align-items:center;
+   border-radius: 10%;
 
+   border-style:double;
+   
+}
 
 
