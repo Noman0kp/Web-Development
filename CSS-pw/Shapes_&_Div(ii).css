@@ -1,0 +1,40 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+            height: 100%;
+            width: 100%;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+div {
+    background-color: aquamarine;
+    height: 30%;
+    width: 30%;
+
+    /* SINCE THIS DIV IS A RECT. IF WE SET BORDER RADIUS TO 50%, IT'LL MAKE AN ELLIPSE. */
+
+    border-radius: 50%;
+
+}
+
+#Box1 {
+    background-color: azure;
+
+    height: 300px;
+    width: 300px; 
+    /* ABOVE WE MADE A SQUARE (SEE NOTES) */
+
+    /* FURTHER WE CAN MODIFY IT USING THE FOLLOEING TAGS. */
+
+    border-style: solid; /* THIS WILL ADD A BORDER, WE CAN ALSO ADD DIFFER. TYPES OF BORDERS. */
+    border-width: 5px;   /* THIS INCREASES BORDER THICKNESS */
+    border-radius: 50%;  /* THIS MAKES THE CORNERS ROUNDED. HENCE TO MAKE A CIRCLE, SET IT TO 50% */
+
+    }

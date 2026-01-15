@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-01</title>
+
+    <link rel="stylesheet" href="Assignment-01.css">
+</head>
+
+<!-- IN THIS ASSIGNMENT, WE HAVE TO PRINT 3 BOXES. BOX1, BOX2 AND BOX3. 1 AND 2 SIDE BY SIDE
+AND 3 RIGHT BELOW THEM.  -->
+
+<body>
+
+<!-- USING "display : flex" IN PARENT MAKES THE CHILD TO BE IN ONE SINGLE LINE. SO 1,2,3 WILL
+COME IN ONE LINE. 
+CAN'T USE <br> BECAUSE flexBox IGNORES IT. 
+AND TRIES TO ALIGN IT'S DIRECT CHILDREN.
+
+SO WE'LL MAKE USE OF THE FACT THAT "display = flex" ONLY CONTROLS IT'S IMMEDIATE 
+CHILDREN. SO WE'LL PUT 2 BOXES INSIDE ANOTHER PARENT TAG AND 3rd ONE SEPARATELY. 
+AS SHOWS BELOW:  -->
+
+<!-- BELOW <body> HAS 2 DIRECT CHILDREN. <main> AND <div> AND "display = flex" USED IN  
+    <body> WILL ACT ON THESE TWO -->
+
+<main>
+
+    <div id="box1"> <h2>Box-1</h2></div>
+    <div id="box2"> <h2>Box-2</h2></div>
+
+</main>
+
+<div id="box3"> <h2>Box-3</h2></div>
+    
+    
+
+</body>
+</html>
