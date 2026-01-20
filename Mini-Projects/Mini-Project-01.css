@@ -1,0 +1,94 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 245, 230);
+
+    /* NOW WE'LL ALIGN THE SHAPES AS REQUIRED : */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BELOW WE MADE A CLASS 'shapes' SO THAT WE DON'T HAVE TO GIVE SIMILAR PROPERTIES OF THE SHAPES
+SEPARATELT TO EACH. IT ALSO DECREASES THE LENGTH OF THE CODE.  */
+
+.shapes {
+
+    height: 250px;
+    width: 250px;
+    border-style:solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+    /* BY ADDING MARGIN HERE, ALL SHAPES HAVE SOME SPACE BETWEEN EACH OTHER. */
+    margin: 5px;
+
+    /* SINCE THE COLOUR WAS CHANGING INSTANTLY, WE'RE USING TRANSITION HERE TO MAKE 
+    THE CHANGE SMOOTH. */
+
+    transition: background-color 0.3s;
+
+}
+
+#diamond {
+    
+    rotate: 45deg;
+
+    /* SINCE THE square AND THE diamond ARE OVERLAPPING, WE'LL GIVE TOP MARGIN TO diamond
+    TO FIX THIS. 
+    GIVING BOTTOM MARGIN TO square ALSO WORKS... */
+
+    margin-top: 65px; 
+
+}
+
+/* SINCE FOR DIAMOND, WE ROTATED A SQUARE, THE HEADING IN THE CENTRE ALSO GOT ROTATED. SO
+WE'LL ROTATE THE HEADING SEPARATELY. BUT WE CAN'T ROTATE h1 STRAIGHT, IT'LL ROTATE
+ALL THE h1 HEADINGS. 
+SO WE'LL SPECIFICALLY ROTATE THE h1 OF "diamond" AS SHOWS BELOW :  */
+
+#diamond h1 {
+    rotate: -45deg;
+}
+
+
+#circle {
+
+    border-radius: 50%;
+   
+
+}
+
+/* ABOVE WE'VE CREATED OUR WEBPAGE LOOKS. NOW WE'LL WORK ON FUNCTIONING. i.e. ON HOVERING 
+OVER ANY SHAPE, IT CHANGES COLOUR. (SEE NOTES) */
+
+#square:hover {
+    
+    background-color: rgb(255, 138, 138);
+    
+}
+
+#circle:hover {
+
+     background-color: rgb(194, 252, 229);
+
+}
+
+#diamond:hover {
+
+    background-color: rgb(199, 194, 252);
+
+}
