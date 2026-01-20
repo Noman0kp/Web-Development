@@ -36,10 +36,11 @@ SEPARATELT TO EACH. IT ALSO DECREASES THE LENGTH OF THE CODE.  */
     /* BY ADDING MARGIN HERE, ALL SHAPES HAVE SOME SPACE BETWEEN EACH OTHER. */
     margin: 5px;
 
-    /* SINCE THE COLOUR WAS CHANGING INSTANTLY, WE'RE USING TRANSITION HERE TO MAKE 
-    THE CHANGE SMOOTH. */
+    /* SINCE THE COLOUR AND SHADOW WAS CHANGING INSTANTLY, WE'RE USING TRANSITION HERE 
+    TO MAKE THE CHANGE SMOOTH. */
 
     transition: background-color 0.3s;
+    transition: box-shadow 0.3s;
 
 }
 
@@ -73,22 +74,27 @@ SO WE'LL SPECIFICALLY ROTATE THE h1 OF "diamond" AS SHOWS BELOW :  */
 }
 
 /* ABOVE WE'VE CREATED OUR WEBPAGE LOOKS. NOW WE'LL WORK ON FUNCTIONING. i.e. ON HOVERING 
-OVER ANY SHAPE, IT CHANGES COLOUR. (SEE NOTES) */
+OVER ANY SHAPE, IT CHANGES COLOUR. (SEE NOTES)
+ALSO, WHEN WE'LL HOVER, SHADOW WILL APPEAR SO IT WILL LOOK LIKE CARD IS LIFTING OFF OF 
+SCREEN. */
 
 #square:hover {
     
     background-color: rgb(255, 138, 138);
+    box-shadow: 5px 5px 10px black;
     
 }
 
 #circle:hover {
 
      background-color: rgb(194, 252, 229);
+     box-shadow: 5px 5px 10px black;
 
 }
 
 #diamond:hover {
 
     background-color: rgb(199, 194, 252);
+    box-shadow: 5px 5px 10px black;
 
 }
