@@ -1,0 +1,116 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+
+    height: 100%;
+    width: 100%;
+
+    background-color:antiquewhite;
+
+    position: relative; /* SEE NOTES */
+
+}
+
+.cards {
+    height: 360px;
+    width: 290px;
+
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10%;
+    border-color:beige;
+
+    overflow: hidden; /* THIS FIXES THE CORNERS, SINCE THE IMGs OVERFLOWED AND ROUNDED CORNERS OF CARDS WERE 
+    NOT VISIBLE DUE TO THIS. */
+
+    /* SEE NOTES FOR EVERYTHING WRITTEN BELOW :  */
+
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+
+}
+
+/* NORMAL 'rotate' ATTRIBUTE ROTATES ITEMS AROUND THERE CORNER. HERE WE WANT THEM TO ROTATE 
+AROUND THERE CENTRE. FOR THIS, WE'LL USE 'transform : rotate()' */
+
+/* 
+ALSO BECAUSE WE'RE USING 'transform : translate()' ALSO AT THE SAME TIME, WE NEED TO 
+MENTION IT IN EVERY ITEM SEPARATELY AND NOT IN CLASS. 
+BECAUSE : SINCE WE'RE USING TWO 'transform' PROPERTIES HERE, IF WE DEFINE ONE IN 
+GENERAL CLASS AND ANOTHER ONE IN SPECIFIC CLASS, THE SECOND ONE WILL COMPLETELY REPLACE
+THE FIRST ONE. HENCE ONLY SECOND ONE WILL COME IN ACTION AND  FIRST ONE WILL BE IGNORED. */
+
+/* CURRENTLY, CARD-04 IS ON TOP. BUT WE WANT CARD-01 TO BE ON TOP THEN 2, 3 AND 4.
+FOR THIS, WE'LL USE THE Z-INDEX PROPERTY. (SEE NOTES) */
+
+#card01 {
+   
+    transform: translate(-50%, -50%) rotate(0deg);
+    z-index: 4;
+}
+
+#card02 {
+   
+    transform: translate(-50%, -50%) rotate(-9deg);
+    z-index: 3;
+}
+
+#card03 {
+    
+    transform: translate(-50%, -50%) rotate(-18deg);
+    z-index:2;
+}
+
+#card04 {
+    transform: translate(-50%, -50%) rotate(-27deg);
+    
+    z-index: 1;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    /* SETTING HEIGHT AND WIDTH 100% WILL MAKE THE IMAGE OCCUPY 100% AREA OF OUR DIV. BUT
+    THE IMAGE GETS SHRINKED IF WE TRY TO FIX IT IN SMALLER SPACE. ALSO OUR CARDS HAVE 
+    ROUND CORNERS BUT THE IMAGE DOES'NT.  */
+
+    object-fit: cover;  /* THIS FITS THE IMAGE PROPERLY ON THE CARD WITHOUT SHRINKING IT. (REMEMBER TO USE THIS 
+    ATTRIBUTE ON IMAGE AND NOT ON PARENT.) */
+
+    /* FOR THE CORNERS, WE'LL USE 'overflow : hidden' ATTRIBUTE IN .CARDS CLASS SO THAT 
+    IT IS APPLIED TO ALL THE CARDS. */
+    
+}
+
+/* NOW. ON HOVERING OVER THE CARD IT SHOULD COME ON TOP. SO USING Z-INDEX ALONG WITH 
+PSEUDO-CLASSES WE CAN MAKE THIS HAPPEN. */
+
+/* BELOW WE'RE ABLE TO MAKE CARDS COME TO TOP ON HOVERING. WE HAVE ALSO TRIED TO ADD
+OTHER THINGS LIKE SMOOTH TRANSITION AND SHADOW EFFECT TO MAKE IT ATTRACTIVE */
+
+#card02:hover {
+    z-index: 10;
+}
+
+#card03:hover {
+    z-index: 10;
+    
+}
+
+#card04:hover {
+    z-index: 10;
+
+}
