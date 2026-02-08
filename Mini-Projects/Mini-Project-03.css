@@ -1,0 +1,282 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* SINCE ALL THE FONTS IN THE PAGE ARE SAME...SO APPLY IT TO FULL PAGE */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#header {
+    background-color: rgb(255, 255, 255);
+    height: 10%;
+    width: 100%;
+    position: fixed;  /* THIS WILL KEEP THE HEADER FIXED AT IT'S POSITION EVEN IF WE SCROLL DOWN THE SCREEN */
+
+    /* BUT THE CATCH IS...'PAGE1' GOES UNDER THE HEADER.(SEE NOTES FOR EXPLANATION) AND SINCE WE'RE USING '%' AS UNIT FOR HEIGHT AND WIDTH, WE'LL MAKE A FAKE HEADER JUST ABOVE 'PAGE1' SAME SIZE AS THE ORIGINAL HEADER SO THAT THE FAKE HEADER WILL GO UNDER THE MAIN HEADER AND THE WEBPAGE WILL BE FIXED. */
+
+    /* BELOW TO FLEX ALL ELEMENTS IN ONE LINE AND THEN SET THEM VERTICALLY CENTRE.  */
+    display: flex;
+    align-items: center;
+
+}
+
+#left {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+   justify-content: space-between; /* IT PLACES FIRST ITEM AT THE START EDGE OF THE CONTAINER AND THE LAST ITEM AT THE END EDGE OF THE CONTAINER AND DISTRIBUTES THE REMAINING SPACE EQUALLY BETWEEN ITEMS. */
+
+}
+#right {
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+   justify-content: space-between; /* #RIGHT CONTAINS 'ICONS', 'LOGIN', AND 'TRY' WHICH ARE ALSO ARRANGED PROEPRLY USING 'SPACE-BETWEEN' */
+
+}
+
+#fakeHeader {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 10%;
+}
+/* HENCE THE FAKE-HEADER ABOVE FIXES OUR ISSUE EASILY.  */
+
+#logo {
+    height: 70%;
+    margin: 10px;
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* THIS KEEPS THE IMAGE CLEAR. IT IS NOT COMPRESSED OR STRETCHED TO FIT IT IN THE GIVEN SPACE */
+}
+
+.texts {
+    margin: 10px;
+    color:rgb(0, 74, 184);
+    font-weight: 550;
+}
+
+.texts :hover {
+    color: rgb(0, 164, 193);
+}
+
+#contact {
+   margin: 10px;
+   color: rgb(0, 74, 184);
+   font-weight: 500;
+
+   /* BELOW WILL MAKE 'CONTACT' AND THE NUMBER SIT ONE ON THE OTHER PROPERLY.  */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#contact :hover {
+    color: rgb(0, 164, 193);
+}
+
+.icon {    
+    color: rgb(0, 74, 184);
+    font-weight: 550;
+    font-size: larger;
+}
+
+.icon :hover {
+    background-color: rgb(213, 255, 255);
+    border-radius: 100%;
+    padding: 8px;
+}
+
+#login {
+    color: rgb(0, 74, 184);
+    font-weight: 550;
+}
+
+#login:hover {
+    background-color: rgb(213, 255, 255);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+#try {
+    background-color: rgb(3, 144, 3);
+    padding: 10px 20px;
+    color: white;
+    font-weight: 550;
+}
+
+#try:hover {
+    background-color:rgb(0, 67, 0);
+}
+
+#page1 {
+    background-color: white;
+    width: 100%;
+    height: 90%;
+}
+
+#strip {
+    height: 6.5%;
+    background-color: rgb(0, 0, 154);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight:600;
+    font-size: larger;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65%;
+}
+
+#box1 { 
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    }
+
+#big {
+    margin-top: 50px;
+    color: rgb(0, 0, 154);
+    font-weight: 700;
+    font-size: 60px; 
+    padding: 10px 50px; 
+}
+
+#small {
+    padding: 10px 50px;
+    font-size: 28px;
+}
+
+#btns {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 35px;
+    width: 100%;
+    height: 10%;
+}
+
+#btn1 {
+    background-color: rgb(36, 128, 248);
+    margin-right: 40px;
+    margin-left: 49px;
+    padding: 15px 30px;
+
+    color: white;
+    font-weight: 600;
+    font-size:larger;
+}
+
+#btn1:hover{
+    background-color: rgb(0, 68, 157);
+}
+
+#btn2 {
+    border-style: solid;
+    border-color:rgb(7, 168, 255);
+    color: rgb(7, 168, 255);
+    padding: 11.5px 30px;
+
+    font-size: larger;
+    font-weight: 600;
+}
+
+#btn2:hover{
+    border-color:rgb(0, 83, 128);
+    color: rgb(0, 83, 128);
+    background-color: rgb(217, 249, 249);
+}
+
+
+#box2 {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#box2 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(1.1);
+}
+
+#video {
+    height: 55%;
+    width: 60%;
+    background-color:rgb(221, 255, 255);
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+    position: relative;
+    overflow: hidden;   
+}
+
+#video img{
+    position: absolute;
+    z-index: 4;
+    
+}
+
+#video iframe{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    position: absolute;
+    
+    z-index: 5;
+}
+
+#declaration {
+    display:flex;
+    justify-content: center;
+    margin-top: 80px;
+    color: rgb(0, 0, 154);
+    font-size:x-large;
+}
+
+/* PAGE 1 IS COMPLETE HERE. BELOW WE'LL PROCEED WITH PAGE 2 */
+
+#page2 {
+    background-color:rgb(255, 170, 170);
+    width: 100%;
+    height: 90%;
+}
