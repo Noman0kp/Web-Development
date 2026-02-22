@@ -75,6 +75,7 @@ html, body {
 
 .texts :hover {
     color: rgb(0, 164, 193);
+    cursor : pointer;
 }
 
 #contact {
@@ -90,6 +91,7 @@ html, body {
 
 #contact :hover {
     color: rgb(0, 164, 193);
+    cursor : pointer;
 }
 
 .icon {    
@@ -102,6 +104,7 @@ html, body {
     background-color: rgb(213, 255, 255);
     border-radius: 100%;
     padding: 8px;
+    cursor : pointer;
 }
 
 #login {
@@ -113,6 +116,7 @@ html, body {
     background-color: rgb(213, 255, 255);
     border-radius: 100%;
     padding: 10px;
+    cursor : pointer;
 }
 
 #try {
@@ -124,6 +128,7 @@ html, body {
 
 #try:hover {
     background-color:rgb(0, 67, 0);
+    cursor : pointer;
 }
 
 #page1 {
@@ -197,6 +202,7 @@ html, body {
 
 #btn1:hover{
     background-color: rgb(0, 68, 157);
+    cursor : pointer;
 }
 
 #btn2 {
@@ -213,6 +219,7 @@ html, body {
     border-color:rgb(0, 83, 128);
     color: rgb(0, 83, 128);
     background-color: rgb(217, 249, 249);
+    cursor : pointer;
 }
 
 
@@ -276,7 +283,173 @@ html, body {
 /* PAGE 1 IS COMPLETE HERE...BELOW WE'LL PROCEED WITH PAGE 2 */
 
 #page2 {
-    background-color:rgb(255, 170, 170);
+    background-color: white;
     width: 100%;
-    height: 90%;
+    height: 90%;  
+
+    /* SEE NOTES FOR EXPLANATION OF BELOW....<img> TAG v/s bg-img : IN CSS... */
+
+    background-image: url(https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/12/marquee-our-story-bg.jpg?w=1024);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#upHalf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin-top: 30px;
+}
+
+.cards {
+
+    background-color: aliceblue;
+    width: 20%;
+    height: 85%;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.content{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align:left;
+}
+
+.cards h3{
+    color: rgb(1, 1, 166);
+    font-weight:800;
+    margin-left: 25px;
+}
+
+.cards p{
+    font-size: 18px;
+    margin-left: 25px;
+    margin-bottom: 60px;
+}
+
+.cards a{
+    font-weight: 550;
+    font-size:large;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+
+#circle1 {
+    background-color: white;
+    height: 98px;
+    width: 98px;
+    border-radius: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+#circle1 img {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    
+}
+
+#circle2 {
+    background-color: white;
+    height: 98px;
+    width: 98px;
+    border-radius: 100%;
+    margin-top: 40px;
+
+    overflow: hidden;
+     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+#circle2 img {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    
+}
+
+#circle3 {
+    background-color: white;
+    height: 98px;
+    width: 98px;
+    border-radius: 100%;
+    margin-top: 40px;
+    
+    overflow: hidden;
+     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#circle3 img {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    
+}
+
+#circle4 {
+    background-color: white;
+    height: 98px;
+    width: 98px;
+    border-radius: 100%;
+    margin-top: 40px;
+
+    overflow: hidden;
+     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#circle4 img {
+    width: 100%;
+    height: 100%;
+    padding: 12px;   
+}
+
+
+#lowHalf {
+    
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#view {
+    background-color:aliceblue  ;
+    height: 25%;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: larger;
+    font-weight: 550;
+    color: rgb(27, 30, 237);
+    border-style: solid;
+    border-color: rgb(27, 30, 237);
+    margin-top: 50px;
+
+   
+}
+
+#view:hover{
+       background-color: rgb(217, 249, 249);
+        cursor: pointer;
 }
