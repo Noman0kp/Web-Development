@@ -5,13 +5,15 @@ let d = true;
 let e = 'A';
 
 // NOW, WE WILL SEE HOW DATA TYPES WORK IN JAVASCRIPT. 
-
-console.log(typeof(a)); // NUMBER
-console.log(typeof(b)); // NUMBER
-console.log(typeof(c)); // STRING
-console.log(typeof(d)); // BOOLEAN
-console.log(typeof(e)); // STRING
+a,
+console.log(a,typeof a,); // NUMBER
+console.log(b,typeof b,); // NUMBER
+console.log(c,typeof c); // STRING
+console.log(d,typeof d); // BOOLEAN
+console.log(e,typeof e); // STRING
 
 // HERE, INT AND FLOAT B ARE BOTH OF THE TYPE NUMBER IN JAVASCRIPT.
+
 // ALSO STRING CAN BE DECLARED USING EITHER DOUBLE QUOTES (" ") OR SINGLE QUOTES (' '), BOTH ARE VALID IN JAVASCRIPT.
+
 // NO CHARACTER DATA TYPE IN JAVASCRIPT, A SINGLE CHARACTER IS ALSO CONSIDERED A STRING.
