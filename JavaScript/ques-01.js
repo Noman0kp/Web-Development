@@ -1,0 +1,48 @@
+// WRTIE A PROGRAM TO PRINT RANDOM NUMBERE BETWEEN 0 AND 9 (INCLUDED).
+
+// WE KNOW THAT, MATH.RANDOM WILL GIVE RANDOM NUMBERS BETWEEN 0 - 1 (EXCLUDED). IF WE MULTIPLY IT BY 10, WE GET RANDOM NUMBERS BETWEEN 0 - 10. WHERE 10 IS NOT INCLUDED. HENCE WE GET RANDOM NUMBERS FROM 0 - 9 (INCLUDED)
+
+console.log("Random real numbers between 0 and 9: ");
+
+let num = Math.random()*10;
+console.log(num);
+
+console.log()
+
+
+
+
+// NOW, TO PRINT RANDOM INTEGERS BETWEEN 0-9(INCLUDED).
+// WE STUDIED AN IN-BUILT FXN, CALLED FLOOR. 
+
+console.log("Random integers between 0 and 9: ");
+
+let num2 = Math.floor(num);
+console.log(num2);
+
+console.log()
+
+
+// NEXT QUESTION : PRINT RANDOM INTEGER BETWEEN O AND 10 (INCLUDED)
+
+console.log("Random integers between 0 and 10: ");
+
+let num3 = Math.floor(Math.random()*11);
+console.log(num3);
+
+console.log()
+
+// EXPLANATION : SINCE HERE, WE HAD TO INCLUDE 10, WE INCREASED THE RANGE TO 0 TO 11. WHERE 11 IS NOT INCLUDED. 
+
+
+// NEXT QUESTION : PRINT RANDOM INTEGER BETWEEN -1O AND 10 (INCLUDED)
+
+console.log("Random integers between -10 and 10: ");
+
+let num4 = Math.floor(Math.random()*21 - 10);
+
+console.log(num4);
+
+console.log()
+
+// EXPLANATION : FROM -10 TO 10, THERE ARE TOTAL 21 NUMBERS. SO WE'LL INCREASE THE RANGE TO 0 TO 21 (EXCLUDED). SO EFFECTIVE WE HAVE 0 TO 20 PRINTABLES.....HERE WHAT WE DID IS, SUBTRACT 10. SO THAT IF THE RANDOM NUMBER PRINTED IS FROM 11 TO 20, SUBTRACTING IT FROM 10 WILL GIVE A NEGATIVE NUMBER.

@@ -1,0 +1,41 @@
+//STRING IS CONSIDERED AS A ARRAY OF CHARACTERS. EX: 
+let s1 = "Nomaan";
+console.log(s1,"& Length of s1:",s1.length); 
+
+let s2 = "NOMAAN KHAN PATHAN";
+console.log(s2,"& length of s2:",s2.length); // LOGICALLY THE LENGTH SHOULD BE 16 BUT IT COMES OUT TO BE 18 BECAUSE "SAPCE" IS ALSO CONSIDERES A CHARACTER HERE. 
+
+// WE CAN ALSO ACCESS STRING ELEMENT RANDOMLY THROUGH THEIR INDEX NUMBER. JUST LIKE ARRAYS: 
+console.log("ACCESSING RANDOM ELEMENT USING INDEX: ")
+console.log(s2[7]); // THIS WILL PRINT 'k'
+
+// WE CAN ALSO PRINT THE STRING USING A FOR LOOP. 
+console.log("PRINTING THE STRING USING A LOOP: ");
+for(let i = 0; i<s1.length; i++){
+    console.log(s1[i]);
+}
+
+// forOf LOOP ALSO WORKS FOR STRINGS BUT forEach LOOP DOES NOT. 
+
+// NOW WE WILL SEE SOME BUILT-IN FUNCTIONS OF STRINGS: 
+
+console.log(s1.toUpperCase()); // MAKES ALL THE CHAR. IN CAPITAL LETTERS.
+console.log(s2.toLowerCase()); // MAKES ALL THE CHAR. IN small LETTERS.
+
+let s3 = "    Khan   "; // WE MADE A STRING WITH EXTRA SPACES IN FRONT AND BACK. SO IT'S LENGTH IS = 11
+console.log(s3,s3.length);
+
+let s4 = s3.trim(); 
+console.log(s4, s4.length); // WHAT TRIM FUNCTION DO IS, REMOVES THE EXTRA SPACES FROM FRONT AND BACK AND NOW LENGTH OF OUT STRING IS = 4. BUT DOES NOT REMOVES SPACES IN BETWEEN. 
+
+console.log(s1.indexOf('N')); // AS EXPECTED, IT GIVES 0
+console.log(s3.indexOf('K')); // ANSWER IS 4. BECAUSE SPACES ARE ALSO CONSIDERED. 
+
+// WHAT IF THERE ARE MULTIPLE INDICES. i.e. IN s1, "Nomaan", 'a' COMES TWICE. 
+
+console.log(s1.indexOf('a')); // IT PICKS THE FIRST INDEX. 
+console.log(s2.lastIndexOf('A')); // THIS TO GET THE LAST INDEX OF FREQUENTLY APPEARING CHAR.
+
+let s5 = "NomaanKhan";
+console.log(s5.slice(2)); // THIS GIVES SUBSTRING FROM INDEX 'i' TILL END
+console.log(s5.slice(4,8)); // THIS GIVES SUBSTRING FROM INDEX i TO j-1

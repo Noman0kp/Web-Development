@@ -79,3 +79,36 @@ console.log(arr5); // THIS WILL PRINT THE JAGGED ARRAY.
 console.log("2D ARRAY WITH DIFFERENT DATA TYPES : ");
 let arr6 = [[1, "Hello"], [true, 3.14], ['A', [1, 2, 3]]];
 console.log(arr6); // THIS WILL PRINT THE 2D ARRAY WITH DIFFERENT DATA TYPES.
+
+// NOW WE WILL USE forOf LOOP TO PRINT AN ARRAY : 
+
+console.log("PRINTING AN ARAY USING forOf LOOP: ")
+let arr7 = [2, 4, 6, 8, 10];
+
+for (const it of arr7) {
+    console.log(it);
+}
+
+// BUT THE THING IS IN NORMAL FOR LOOP, THE ARRAY ELEMENTS CAN BE UPDATED, i.e. :
+for(let i = 0; i<arr7.length; i++) {
+    arr7[i]*=2;
+}
+console.log("PRINTING THE ABOVE ARRAY AFTER UPDATING IT IN FOR LOOP: ")
+console.log(arr7); // CLEARLY THE ARRAY ELEMENTS GET UPDATED. BUT IF WE TRY THE SAME WITH forOf LOOP, IT WON'T HAPPEN. BECAUSE forOf LOOP BRINGS A NEW VBL. THAT MAKES COPY OF THE ARRAY ELEMENTS AND THEN PRINT THEM. UNLINE NORMAL FOR LOOP THAT ACCESS THE ARRAY DIRECTLY.
+
+// NOW WE WILL SEE THE forEach LOOP : 
+
+console.log("PRINTING THE ARRAY USING forEach LOOP: (ONLY ELEMENTS)")
+arr7.forEach(it => {
+   console.log(it); 
+});
+
+console.log("PRINTING THE ARRAY USING forEach LOOP: (ELEMENTS & INDICES)")
+arr7.forEach((it,I) => {
+   console.log(it,"Index: ",I); 
+});
+
+console.log("PRINTING THE ARRAY USING forEach LOOP: (ELEMENTS & INDICES & ARRAY)")
+arr7.forEach((it1,I,ele) => {
+   console.log(it1,"Index: ",I, ele); 
+});
